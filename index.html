@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Wonder Bakes – Bakery and Cake Shop, Visakhapatnam</title>
+<meta name="description" content="The Wonder Bakes: bakery and cake shop in Visakhapatnam. Rated 4.6 from 109 reviews. Open until 10:30 pm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fff5f7; --surface:#ffffff; --ink:#2f1423; --muted:#6f5362; --line:#f3d4dd;
+  --plum:#2f1423; --plum2:#4a1f38; --pink:#e8456b; --butter:#ffd166; --mint:#a8dcb4; --onplum:#fff5f7;
+  --head:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1d0d16; --surface:#2b1522; --ink:#ffeef2; --muted:#d3aebb; --line:#47263a; --pink:#ff7a9a; color-scheme:dark;}}
+:root[data-theme="dark"]{--bg:#1d0d16; --surface:#2b1522; --ink:#ffeef2; --muted:#d3aebb; --line:#47263a; --pink:#ff7a9a; color-scheme:dark;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--body)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--butter);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.5rem}
+svg.i{display:block}
+
+/* nav */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--plum);color:var(--onplum)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--plum);z-index:30}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 1.35rem/1 var(--head);text-decoration:none;display:flex;align-items:center;gap:.5rem}
+.logo svg{width:28px;height:28px}
+nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
+nav ul a{text-decoration:none;font-weight:500;opacity:.85}
+nav ul a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--butter)}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:.85rem 1.6rem;border-radius:999px;border:2px solid currentColor;transition:transform .15s,background .15s,color .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:var(--pink);border-color:var(--pink);color:#fff}
+.btn.ghost{color:var(--onplum)}
+.btn.ghost:hover{background:var(--onplum);color:var(--plum)}
+nav .btn{padding:.5rem 1.2rem;font-size:.95rem}
+@media(max-width:720px){nav ul{display:none}}
+
+/* hero */
+.hero{background:var(--plum);color:var(--onplum);overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding-top:4rem;padding-bottom:5rem}
+.tag{display:inline-flex;gap:.5rem;align-items:center;background:var(--butter);color:var(--plum);font-weight:600;font-size:.95rem;padding:.35rem .9rem;border-radius:999px}
+h1{font:800 clamp(3.2rem,9vw,6.4rem)/.95 var(--head);letter-spacing:-.025em;margin:1.2rem 0 1.2rem}
+h1 em{font-style:italic;font-weight:600;color:var(--butter)}
+.lede{font-size:1.2rem;max-width:30rem;opacity:.88;margin:0 0 2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.art{position:relative;aspect-ratio:1;max-width:460px;width:100%;justify-self:center}
+.art .blob{position:absolute;inset:6%;border-radius:50%;background:var(--plum2)}
+.art svg{position:absolute}
+.art .a1{width:72%;left:14%;top:8%}
+.art .a2{width:34%;left:0;bottom:2%}
+.art .a3{width:32%;right:0;bottom:6%}
+.wave{display:block;width:100%;height:50px;color:var(--bg);margin-top:-1px}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr;padding-top:2.5rem;padding-bottom:3rem}.art{max-width:320px}}
+
+/* facts */
+.facts{margin-top:-2.2rem;position:relative;z-index:2}
+.facts .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.fact{background:var(--surface);border:2px solid var(--line);border-radius:1.25rem;padding:1.1rem 1.3rem}
+.fact b{display:block;font:800 1.9rem/1.1 var(--head)}
+.fact span{color:var(--muted);font-size:.95rem}
+.fact .st{color:#f5a623;letter-spacing:.08em;font-size:1rem}
+
+/* sections */
+section{padding:4.5rem 0 0}
+.sh{max-width:36rem;margin-bottom:2rem}
+h2{font:800 clamp(2rem,5vw,3rem)/1.05 var(--head);letter-spacing:-.015em;margin:0 0 .6rem}
+.sh p{margin:0;color:var(--muted)}
+
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.1rem}
+.card{background:var(--surface);border:2px solid var(--line);border-radius:1.5rem;padding:1.4rem;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card .pic{border-radius:1rem;aspect-ratio:4/3;display:grid;place-items:center;margin-bottom:1rem}
+.card .pic svg{width:58%}
+.card h3{font:800 1.4rem/1.15 var(--head);margin:0 0 .25rem}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.card.star{background:var(--plum);color:var(--onplum);border-color:var(--plum)}
+.card.star p{color:#e8cdd7}
+.badge{display:inline-block;background:var(--butter);color:var(--plum);font-weight:600;font-size:.8rem;padding:.15rem .65rem;border-radius:999px;margin-bottom:.5rem}
+.c1{background:#ffe3ea}.c2{background:#fff0c7}.c3{background:#ddf2e2}.c4{background:#4a1f38}
+
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.1rem}
+blockquote{margin:0;background:var(--surface);border:2px solid var(--line);border-radius:1.5rem;padding:1.6rem;position:relative}
+blockquote::before{content:"“";position:absolute;top:.2rem;left:1.1rem;font:800 4rem/1 var(--head);color:var(--pink);opacity:.35}
+blockquote p{margin:1.4rem 0 1rem;font:600 1.15rem/1.5 var(--head)}
+blockquote .st{color:#f5a623;letter-spacing:.08em}
+blockquote small{display:block;color:var(--muted)}
+
+.visit{display:grid;grid-template-columns:1.2fr 1fr;gap:1.1rem}
+.panel{background:var(--surface);border:2px solid var(--line);border-radius:1.5rem;padding:1.8rem}
+.panel.dark{background:var(--plum);color:var(--onplum);border-color:var(--plum)}
+dl{margin:0;display:grid;gap:1.1rem}
+dt{font-weight:600;font-size:.9rem;color:var(--pink)}
+.panel.dark dt{color:var(--butter)}
+dd{margin:.1rem 0 0}
+dd a{font-weight:600}
+.panel.dark .lede{opacity:.85;font-size:1.05rem;margin-bottom:1.4rem}
+@media(max-width:820px){.visit{grid-template-columns:1fr}}
+
+footer{margin-top:5rem;background:var(--plum);color:var(--onplum);padding:2rem 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;justify-content:space-between;font-size:.92rem;opacity:.9}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="donut" viewBox="0 0 200 200">
+      <ellipse cx="100" cy="112" rx="88" ry="78" fill="#d9964f"/>
+      <ellipse cx="100" cy="98" rx="88" ry="78" fill="#f2b872"/>
+      <path d="M22 98c0-44 36-74 78-74s78 30 78 74c0 8-8 8-12 0-4 14-14 14-18 2-6 14-18 12-20 0-6 12-18 10-22-2-6 12-18 12-22 0-4 12-16 14-20 0-6 12-14 10-16 0-4 4-8 4-8-2z" fill="#e8456b"/>
+      <ellipse cx="100" cy="100" rx="26" ry="20" fill="#2f1423"/>
+      <ellipse cx="100" cy="97" rx="26" ry="18" fill="#4a1f38"/>
+      <g stroke-width="6" stroke-linecap="round"><path d="M50 70l8-4" stroke="#ffd166"/><path d="M80 44l6 6" stroke="#fff"/><path d="M124 42l8 4" stroke="#a8dcb4"/><path d="M152 70l-8-3" stroke="#ffd166"/><path d="M148 110l-8 2" stroke="#fff"/><path d="M60 118l8 4" stroke="#a8dcb4"/><path d="M100 148l2-9" stroke="#ffd166"/><path d="M70 90l-2 8" stroke="#fff"/><path d="M130 84l6 5" stroke="#ffd166"/></g>
+    </symbol>
+    <symbol id="cupcake" viewBox="0 0 200 200">
+      <path d="M44 100h112l-14 84H58z" fill="#a8dcb4"/>
+      <path d="M72 100l6 84M100 100v84M128 100l-6 84" stroke="#7fbf8f" stroke-width="5"/>
+      <path d="M38 102c0-22 16-30 30-30 4-26 62-26 66 0 14 0 30 8 30 30z" fill="#ffb3c6"/>
+      <path d="M62 70c4-28 72-28 76 0-14-12-62-12-76 0z" fill="#ff8aa8"/>
+      <circle cx="100" cy="34" r="13" fill="#e8456b"/><path d="M100 22c0-8 4-12 9-14" stroke="#4a8a58" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <g stroke-width="5" stroke-linecap="round"><path d="M64 92l7-3" stroke="#fff"/><path d="M92 82l7 3" stroke="#ffd166"/><path d="M128 92l-7-3" stroke="#fff"/></g>
+    </symbol>
+    <symbol id="slice" viewBox="0 0 200 200">
+      <path d="M20 150L50 70l130 20-10 70z" fill="#7a3b2a"/>
+      <path d="M20 150L50 70l130 20-10 70z" fill="none"/>
+      <path d="M22 118l150 20-2 22-150-10z" fill="#fff0c7"/>
+      <path d="M26 96l146 20" stroke="#fff0c7" stroke-width="14"/>
+      <path d="M50 70l130 20c4 6 2 14-2 20L24 92z" fill="#e8456b"/>
+      <path d="M24 92c10 4 8 20 16 20s6-14 16-12 8 18 18 18 6-14 16-12" fill="none"/>
+      <circle cx="70" cy="62" r="13" fill="#c2185b"/><circle cx="108" cy="68" r="11" fill="#e8456b"/><circle cx="146" cy="76" r="12" fill="#c2185b"/>
+      <path d="M20 150L170 160l-2 14-148-12z" fill="#5a2a1d"/>
+    </symbol>
+    <symbol id="dosa" viewBox="0 0 200 200">
+      <path d="M20 150C30 60 120 30 184 70c-10 40-70 74-164 80z" fill="#e8a847"/>
+      <path d="M34 140C48 78 118 52 170 78c-14 30-62 58-136 62z" fill="#f4c26b"/>
+      <path d="M60 112c20-10 40-20 70-28M72 128c24-12 46-24 78-34" stroke="#d4902f" stroke-width="5" stroke-linecap="round" fill="none"/>
+      <circle cx="48" cy="164" r="16" fill="#fff"/><circle cx="48" cy="164" r="9" fill="#a8dcb4"/>
+      <circle cx="94" cy="170" r="14" fill="#fff"/><circle cx="94" cy="170" r="8" fill="#e8456b"/>
+    </symbol>
+    <symbol id="tea" viewBox="0 0 200 200">
+      <path d="M40 90h110v36c0 30-24 52-55 52s-55-22-55-52z" fill="#fff"/>
+      <path d="M150 100h12c18 0 18 34 0 34h-16" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+      <path d="M46 98h98v10H46z" fill="#c8793a"/>
+      <ellipse cx="95" cy="190" rx="70" ry="8" fill="#000" opacity=".2"/>
+      <path d="M72 70c-8-12 8-18 0-30M100 70c-8-12 8-18 0-30M128 70c-8-12 8-18 0-30" stroke="#ffd7e0" stroke-width="6" stroke-linecap="round" fill="none"/>
+    </symbol>
+  </defs>
+</svg>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top"><svg class="i" aria-hidden="true"><use href="#cupcake"/></svg>The Wonder Bakes</a>
+    <ul>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn primary" href="tel:+919347881146">Call now</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="tag">Bakery and Cake Shop · Visakhapatnam</span>
+      <h1>Baked fresh, made <em>wonderful.</em></h1>
+      <p class="lede">An assorted menu of baked goods and other foods such as donuts, with tea to go alongside. Rated 4.6 by 109 happy guests.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTF2cjVxazZxehgBOgMI8A0%3D&amp;hl=en-IN&amp;gl=in&amp;cs=1&amp;ssta=1&amp;fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&amp;utm_source=search&amp;gei=mUn1av_2DcW1hvcP4KWcoQg&amp;ei=mUn1av_2DcW1hvcP4KWcoQg&amp;fo_s=OA&amp;opi=89978449&amp;orderType=1&amp;ebb=1&amp;foub=mcpp" target="_blank" rel="noopener">Order online</a>
+        <a class="btn ghost" href="https://maps.google.com/maps?ftid=0x3a395d6b17a43619:0x7bd9d598290c1d70" target="_blank" rel="noopener">Get directions</a>
+      </div>
+    </div>
+    <div class="art" role="img" aria-label="Illustration of a donut, a cupcake and a slice of cake">
+      <div class="blob"></div>
+      <svg class="a1" viewBox="0 0 200 200"><use href="#donut"/></svg>
+      <svg class="a2" viewBox="0 0 200 200"><use href="#cupcake"/></svg>
+      <svg class="a3" viewBox="0 0 200 200"><use href="#slice"/></svg>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 50" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50V20c120 30 240 30 360 10s240-30 360-10 240 30 360 10 240-20 360-10v30z" fill="currentColor"/></svg>
+</header>
+
+<div class="facts">
+  <div class="wrap grid">
+    <div class="fact"><b>4.6</b><span class="st" aria-hidden="true">★★★★★</span> <span>109 Google reviews</span></div>
+    <div class="fact"><b>₹1–200</b><span>per person</span></div>
+    <div class="fact"><b>10:30 pm</b><span>Open now, closes at 10:30 pm</span></div>
+  </div>
+</div>
+
+<main>
+  <section id="menu">
+    <div class="wrap">
+      <div class="sh"><h2>Fresh from the counter</h2><p>Baked goods, donuts, hot tea and more. Here is a taste of what you will find.</p></div>
+      <div class="menu">
+        <article class="card star"><div class="pic c4"><svg viewBox="0 0 200 200" role="img" aria-label="Dosa"><use href="#dosa"/></svg></div><span class="badge">Menu highlight</span><h3>Dosa</h3><p>Golden, crisp and served with chutneys.</p></article>
+        <article class="card"><div class="pic c1"><svg viewBox="0 0 200 200" role="img" aria-label="Donut"><use href="#donut"/></svg></div><h3>Donuts</h3><p>Soft, glazed and topped with sprinkles.</p></article>
+        <article class="card"><div class="pic c2"><svg viewBox="0 0 200 200" role="img" aria-label="Cake slice"><use href="#slice"/></svg></div><h3>Cakes</h3><p>Slices and whole cakes for every celebration.</p></article>
+        <article class="card"><div class="pic c3"><svg viewBox="0 0 200 200" role="img" aria-label="Cupcake"><use href="#cupcake"/></svg></div><h3>Baked goods</h3><p>An assorted selection, baked through the day.</p></article>
+        <article class="card"><div class="pic c1"><svg viewBox="0 0 200 200" role="img" aria-label="Tea cup"><use href="#tea"/></svg></div><h3>Tea</h3><p>A warm cup to go with your bake.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="wrap">
+      <div class="sh"><h2>Loved by our guests</h2><p>Words from the 109 people who have rated us on Google.</p></div>
+      <div class="reviews">
+        <blockquote><span class="st" aria-hidden="true">★★★★★</span><p>Food items taste is sooo good, Atmosphere is so pleasant 😁 Good service</p><small>Google review</small></blockquote>
+        <blockquote><span class="st" aria-hidden="true">★★★★★</span><p>Great experience and ambience Good food Money worth 💯 Must visit</p><small>Google review</small></blockquote>
+        <blockquote><span class="st" aria-hidden="true">★★★★★</span><p>Good tastes all items, and good reciving and cool atmosphere.</p><small>Google review</small></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sh"><h2>Come say hello</h2><p>We are opposite Care Hospital on Simhachalam Road.</p></div>
+      <div class="visit">
+        <div class="panel">
+          <dl>
+            <div><dt>Address</dt><dd>Health City, Simhachalam Rd, opp. Care Hospital, Chinnagadlli, Hanumanthavaka, Visakhapatnam, Andhra Pradesh 530040</dd></div>
+            <div><dt>Hours</dt><dd>Open today · Closes 10:30 pm</dd></div>
+            <div><dt>Phone</dt><dd><a href="tel:+919347881146">093478 81146</a></dd></div>
+            <div><dt>Price</dt><dd>₹1–200 per person</dd></div>
+          </dl>
+        </div>
+        <div class="panel dark">
+          <h2 style="font-size:2rem">Hungry already?</h2>
+          <p class="lede">Order online for pickup or delivery, or get directions and drop in.</p>
+          <div class="cta">
+            <a class="btn primary" href="https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTF2cjVxazZxehgBOgMI8A0%3D&amp;hl=en-IN&amp;gl=in&amp;cs=1&amp;ssta=1&amp;fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&amp;utm_source=search&amp;gei=mUn1av_2DcW1hvcP4KWcoQg&amp;ei=mUn1av_2DcW1hvcP4KWcoQg&amp;fo_s=OA&amp;opi=89978449&amp;orderType=1&amp;ebb=1&amp;foub=mcpp" target="_blank" rel="noopener">Order online</a>
+            <a class="btn ghost" href="https://maps.google.com/maps?ftid=0x3a395d6b17a43619:0x7bd9d598290c1d70" target="_blank" rel="noopener">Get directions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>The Wonder Bakes · Visakhapatnam</span><span>Rating and review details are from the business’s Google listing.</span></div>
+</footer>
+</body>
+</html>
